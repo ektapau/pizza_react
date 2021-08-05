@@ -1,38 +1,70 @@
-.App {
+.card {
+  box-shadow: 0 0 16px 8px rgba(184, 184, 184, 0.315);
+  border-radius: 0px;
+  padding: 20px;
+ 
+}
+.card-ext {
+   height: 400px;
+}
+
+@media (min-width: 576px) { 
+  .card-ext {
+    height: 100%;
+  }
+ }
+.container {
+  padding-top: 20px;
+}
+.box-red {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+.box-green {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.food-type {
   text-align: center;
+  text-transform: capitalize;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="checkbox"] {
+  border: 2px solid #F9A826;
+  width: 30px;
+  height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.fot {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  border-radius: 0px;
 }
